@@ -1,0 +1,158 @@
+/* Reset básico para márgenes y tipografía */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+.form-container {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e9ecef;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #28a745;
+}
+
+/* Botón de agregar */
+#add-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#add-btn:hover {
+    background-color: #218838;
+}
+
+/* Lista de compras */
+.list-container h2 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+}
+
+#shopping-list {
+    list-style: none;
+}
+
+/* Estilo de cada ítem de la lista */
+#shopping-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: background-color 0.2s;
+}
+
+#shopping-list li.completed {
+    background-color: #e8f5e9;
+    text-decoration: line-through;
+    color: #6c757d;
+    border-color: #c8e6c9;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info .name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.item-info .details {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Acciones en cada ítem */
+.item-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-check,
+.btn-delete {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.btn-check:hover {
+    color: #28a745;
+}
+
+.btn-delete:hover {
+    color: #dc3545;
+}
+
+
